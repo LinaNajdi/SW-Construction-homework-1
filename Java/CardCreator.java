@@ -6,10 +6,17 @@ public class CardCreator {
     // we made it final because we want to make sure that the value of the variable cannot be changed after it is set in the constructor
     private final boolean correct;
 
-public CardCreator(boolean correct) {
+    private  final String question;
+
+public CardCreator(boolean correct , String question) {
     this.correct = correct;
+    this.question = question;
 }
     public boolean isCorrect() {
         return this.correct;
+    }
+
+    public String getQuestion() {
+        return this.question;
     }
 }

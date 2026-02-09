@@ -9,12 +9,12 @@ public class Main {
 
         // first we need to create the cards
 
-        CardCreator card1  = new CardCreator (true);
-        CardCreator card2  = new CardCreator (false);
-        CardCreator card3  = new CardCreator (true);
-        CardCreator card4  = new CardCreator (false);
-        CardCreator card5  = new CardCreator (true);
-        CardCreator card6  = new CardCreator (true);
+        CardCreator card1  = new CardCreator (true ,"is the capital of saudi riyadh? ");
+        CardCreator card2  = new CardCreator (false ,"is 1+1=3? ");
+        CardCreator card3  = new CardCreator (true, "are sw students Engineers ? ");
+        CardCreator card4  = new CardCreator (false, "is the day 25 hours? ");
+        CardCreator card5  = new CardCreator (true ,"3+9=12? ");
+        CardCreator card6  = new CardCreator (true,"is the sky blue? ");
 
         // now we need to store them
 
@@ -34,7 +34,7 @@ public class Main {
 
         System.out.println("Sorted Cards:");
         for (CardCreator card : sortedCards) {
-            System.out.println("Card is " + card.isCorrect());
+            System.out.println("Q : " + card.getQuestion() +"Card is " + card.isCorrect());
     }
     
 }}
